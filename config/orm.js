@@ -1,4 +1,4 @@
-var connection = require("../config/connection.js");
+var connection = require("./connection.js");
 
 function printQuestionMarks(num) {
 	var arr = [];
@@ -13,16 +13,8 @@ function objToSql(obj) {
 	var arr = [];
 
 	for (var key in obj) {
-		var value = obj[key];
-
-		if (Oject.hasOwnProperty.call(obj, key)) {
-
-			if (typeof value === "string" && vaule.indexOf(" ") >= 0) {
-				value = "'" + value + "'";
-			}
-			arr.push(key + "=" + vaule);
+		arr.push(key + "=" + obj[key]);
 		}
-	}
 	return arr.toString();
 };
 
@@ -54,7 +46,7 @@ var orm = {
 			cb(result);
 		});
 	},
-	update: function(table, objColVals, condition, cb) {
+	updateOne: function(table, objColVals, condition, cb) {
 		var queryString = "UPDATE " + table;
 
 		queryString += " SET ";
