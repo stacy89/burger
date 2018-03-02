@@ -1,24 +1,47 @@
-<h1>Burgers!</h1>
+<div class="jumbotron jumbotron-fluid bg-white">
+  <div class="container">
+    <h1 class="display-4 mainHead">burger.</h1>
+  </div>
+</div>
 
-<ul>
-	{{#each burgers}}
-		{{#unless devoured}}
-			{{> burger-block devoured=true}}
-		{{/unless}}
-	{{/each}}
-</ul>	
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<ul>
+				{{#each burgers}}
+					{{#unless devoured}}
+						{{> burger-block devoured=true}}
+					{{/unless}}
+				{{/each}}
+			</ul>	
+		</div>
+		
+		<div class="col-md-6">
+			<ul>
+				{{#each burgers}}
+					{{#if devoured}}
+						{{> burger-block devoured=false}}
+					{{/if}}
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+		
+	<div class="row form text-center form-group">
+		<div class="col-md-12">
+			<form class="createForm border border-dark">
+				<h3 class="content">Add a Burger</h3>
+  			<div class="form-group">
+    		<textarea class="form-control" id="burgerName" name="burger_name"></textarea>
+  			</div>
+  			<button type="submit" class="btn btn-dark content">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
 
-<ul>
-	{{#each burgers}}
-		{{#if devoured}}
-			{{> burger-block devoured=false}}
-		{{/if}}
-	{{/each}}
-</ul>
 
-<h2>Add a Burger</h2>
-
-<form class="createForm">
-	<input type="text" id="burgerName" name="burger_name">
-	<input type="submit" value="submit">
-</form>
+			{{!-- <form class="createForm">
+				<input type="text" id="burgerName" name="burger_name">
+				<input type="submit" value="submit">
+			</form> --}}
