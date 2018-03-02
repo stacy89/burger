@@ -1,5 +1,5 @@
 $(function() {
-	$(".eaten").on("click", function() {
+	$(".uneaten").on("click", function() {
 		var id = $(this).data("id");
 		var newBurger = $(this).data("newBurger");
 
@@ -21,7 +21,8 @@ $(function() {
 		event.preventDefault();
 
 		var newBurger = {
-			name: $("#burgerName").val().trim()
+			name: $("#burgerName").val().trim(),
+			devoured: false
 		};
 
 		$.ajax("/api/burgers", {

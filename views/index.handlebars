@@ -3,7 +3,7 @@
 <ul>
 	{{#each burgers}}
 		{{#unless devoured}}
-			{{> burger-block devoured=false}}
+			{{> burger-block devoured=true}}
 		{{/unless}}
 	{{/each}}
 </ul>	
@@ -11,7 +11,7 @@
 <ul>
 	{{#each burgers}}
 		{{#if devoured}}
-			{{> burger-block devoured=true}}
+			{{> burger-block devoured=false}}
 		{{/if}}
 	{{/each}}
 </ul>
