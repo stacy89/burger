@@ -21,7 +21,7 @@ $(function() {
 		event.preventDefault();
 
 		var newBurger = {
-			name: $(burgerName).val().trim();
+			name: $("#burgerName").val().trim()
 		};
 
 		$.ajax("/api/burgers", {
@@ -30,4 +30,5 @@ $(function() {
 		}).then(function() {
 			location.reload();
 		});
+	});	
 });
