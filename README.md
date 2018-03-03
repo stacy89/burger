@@ -4,14 +4,14 @@ Burger allows a user to put in a burger order and will tell you if its ready to 
 
 ## Live Demo
 
-![burger.](demoClip/burger.gif)
+![burger.](demoClip/giphy.mp4)
 
 ### Installing
 
 Step 1: Clone the repo and on your terminal where ever you want it to live and run this on the command line.
 
 ```
-git clone https://github.com/stacy89/giphy.mp4
+git clone https://github.com/stacy89/burger.git
 ```
 
 Step 2: Then run this to install all dependencies needed to run app. Dependencies are mysql for database and inquirer for prompting users with specific questions
