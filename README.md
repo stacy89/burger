@@ -6,8 +6,6 @@ Burger allows a user to put in a burger order and will tell you if its ready to 
 
 https://burger-bk.herokuapp.com/
 
-![burger.](public/demoClip/giphy.mp4)
-
 ### Installing
 
 Step 1: Clone the repo and on your terminal where ever you want it to live and run this on the command line.
