@@ -4,6 +4,8 @@ Burger allows a user to put in a burger order and will tell you if its ready to 
 
 ## Live Demo
 
+https://burger-bk.herokuapp.com/
+
 ![burger.](public/demoClip/giphy.mp4)
 
 ### Installing
