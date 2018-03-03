@@ -1,6 +1,6 @@
 # burger
 
-Burger allows a user to put in a burger order and will tell you if its ready to pick up or if you want to order it again.  
+This app allows a user to put in a burger order and tells them their order is ready to pick up or if they want to order it again.  
 
 ## Live Demo
 
