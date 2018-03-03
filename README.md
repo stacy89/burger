@@ -4,7 +4,7 @@ Burger allows a user to put in a burger order and will tell you if its ready to 
 
 ## Live Demo
 
-![burger.](demoClip/giphy.mp4)
+![burger.](public/demoClip/giphy.mp4)
 
 ### Installing
 
